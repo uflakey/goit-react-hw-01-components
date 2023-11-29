@@ -19,11 +19,14 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+
       <h2 className="task">Statistics</h2>
       <Statistics title="Upload stats" stats={data} />
+
       <h2 className="task">FriendList</h2>
-      <FriendList children = {<FriendListItem friends={friends}/>} />    
-      <h2 className="task">TransactionHistory</h2>
+      <FriendList children={<FriendListItem friends={friends} />} /> 
+      
+      <h2 className="task">Transaction History</h2>
       <TransactionHistory items={transactions} />
   </>
 )};    
